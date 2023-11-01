@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.12",
+    "aws-mqtt-client": "^0.0.6",
+    "aws-sdk": "^2.1383.0",
+    "mqtt": "^5.0.5"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1385.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js" type="text/javascript"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/hmac-min.js" type="text/javascript"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/sha256-min.js" type="text/javascript"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.js" type="text/javascript"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <ul>
+            <li><a class="active" href="index.html">Real-Time Monitoring</a></li>
+            <li><a href="request.html">About</a></li>
+            <div class="topnav-right">
+              <li><b><button class="button" onclick="sendCommand()">Take Photo</button></b></li>
+              <li><b id = "greenhouseState">Greenhouse disabled   <span class="dotred"></span></b></li>
+              <li><b id = "commsState">MQTT Communication not Running  <span class="dotred"> </span></b></li>
+            </div>
+          </ul>
+    <script src="js/request.js"></script>
+    </body>
+</html>
+
